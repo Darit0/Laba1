@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 import json
 import xml.etree.ElementTree as ET
 
-class Menu(ABC): #Интерфейс для всех будующих классов
+class Menu(ABC):    # Интерфейс для всех будующих классов
     @abstractmethod
     def priceList(self):
         pass
@@ -15,7 +15,7 @@ class Menu(ABC): #Интерфейс для всех будующих класс
     def save_to_xml(self, filename):
         pass
 
-class HotDish(Menu):    # Реализация горячих блюд
+class HotDish(Menu):   # Реализация горячих блюд
     def __init__(self):
         self.name = input("Введите название горячего блюда: ")
         while True:
@@ -89,3 +89,6 @@ class Drinks(Menu): #Реализация напитков
         volume = ET.SubElement(root, "volume")
         volume.text = self.volume
         return root
+
+    def bananas(self):
+        print("banana")

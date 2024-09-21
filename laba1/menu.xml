@@ -1,2 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<menu><dish><name>wfcg</name><price>120.0</price><ingredients>guywce, jjygcwy, weg</ingredients></dish><drink><name>kwuug</name><price>120.0</price><volume>10</volume></drink></menu>
+<menu>
+    <dish>
+        <name>Хинкали</name>
+        <price>255.0</price>
+        <ingredients>мясо,  тесто,  зелень</ingredients>
+    </dish>
+    <drink>
+        <name>тархун</name>
+        <price>150.0</price>
+        <volume>200</volume>
+    </drink>
+</menu>

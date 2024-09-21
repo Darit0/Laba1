@@ -1,18 +1,18 @@
 [
     {
         "type": "hot_dish",
-        "name": "wfcg",
-        "price": 120.0,
+        "name": "Хинкали",
+        "price": 255.0,
         "ingredients": [
-            "guywce",
-            "jjygcwy",
-            "weg"
+            "мясо",
+            " тесто",
+            " зелень"
         ]
     },
     {
         "type": "drink",
-        "name": "kwuug",
-        "price": 120.0,
-        "volume": "10"
+        "name": "тархун",
+        "price": 150.0,
+        "volume": "200"
     }
 ]
