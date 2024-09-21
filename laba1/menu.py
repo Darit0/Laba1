@@ -92,3 +92,40 @@ class Drinks(Menu): #Реализация напитков
 
     def bananas(self):
         print("banana")
+
+class Salats(Menu): #Реализация напитков
+    def __init__(self):
+        self.name = input("Введите название напитка: ")
+        while True:
+            try:
+                self.price = float(input("Введите цену напитка: "))
+                if self.price <= 0:
+                    raise ValueError
+                break
+            except ValueError:
+                print("Пожалуйста, введите положительное число.")
+
+        self.volume = input("Введите объем (мл): ")
+
+    def priceList(self):
+        print(f"\nНапиток: {self.name}")
+        print(f"Цена: {self.price} руб.")
+        print(f"Объем: {self.volume}")
+
+    def save_to_json(self):
+        return {
+            "type": "drink",
+            "name": self.name,
+            "price": self.price,
+            "volume": self.volume
+        }
+
+    def save_to_xml(self):
+        root = ET.Element("drink")
+        name = ET.SubElement(root, "name")
+        name.text = self.name
+        price = ET.SubElement(root, "price")
+        price.text = str(self.price)
+        volume = ET.SubElement(root, "volume")
+        volume.text = self.volume
+        return root
