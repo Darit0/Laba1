@@ -27,40 +27,30 @@ def main(): # Это основа - это база
             drink.priceList()
 
     def save_to_json(filename):
-        menu_data = {
-            'hot_dishes': [dish.__dict__ for dish in hot_dishes],
-            'drinks': [drink.__dict__ for drink in drinks]
-        }
+        menu_data = []
+        for dish in hot_dishes:
+            menu_data.append(dish.save_to_json())
+        for drink in drinks:
+            menu_data.append(drink.save_to_json())
+
         try:
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(menu_data, f, ensure_ascii=False, indent=4)
-            print(f"Данные успешно сохранены в файл {filename}")
+            print(f"Все блюда успешно сохранены в JSON-файл {filename}")
         except IOError as e:
             print(f"Ошибка при записи в JSON-файл: {str(e)}")
 
     def save_to_xml(filename):
         root = ET.Element("menu")
 
-        hot_dishes_element = ET.SubElement(root, "hot_dishes")
-        for dish in hot_dishes:
-            item = ET.SubElement(hot_dishes_element, "dish")
-            for attr_name, value in dish.__dict__.items():
-                if not attr_name.startswith('__'):
-                    child = ET.SubElement(item, attr_name)
-                    child.text = str(value)
-
-        drinks_element = ET.SubElement(root, "drinks")
-        for drink in drinks:
-            item = ET.SubElement(drinks_element, "drink")
-            for attr_name, value in drink.__dict__.items():
-                if not attr_name.startswith('__'):
-                    child = ET.SubElement(item, attr_name)
-                    child.text = str(value)
+        for dish in hot_dishes + drinks:
+            item = dish.save_to_xml()
+            root.append(item)
 
         try:
             tree = ET.ElementTree(root)
             tree.write(filename, encoding="unicode", xml_declaration=True)
-            print(f"Данные успешно сохранены в файл {filename}")
+            print(f"Все блюда успешно сохранены в XML-файл {filename}")
         except IOError as e:
             print(f"Ошибка при записи в XML-файл: {str(e)}")
 

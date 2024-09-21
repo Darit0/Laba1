@@ -1,17 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<menu>
-    <hot_dishes>
-        <dish>
-            <name>Хинкали</name>
-            <price>255.0</price>
-            <ingredients>['свнина', ' говядина', ' зелень', ' тесто']</ingredients>
-        </dish>
-    </hot_dishes>
-    <drinks>
-        <drink>
-            <name>чай горный</name>
-            <price>200.0</price>
-            <volume>900</volume>
-        </drink>
-    </drinks>
-</menu>
+<menu><dish><name>wfcg</name><price>120.0</price><ingredients>guywce, jjygcwy, weg</ingredients></dish><drink><name>kwuug</name><price>120.0</price><volume>10</volume></drink></menu>

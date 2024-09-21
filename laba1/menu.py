@@ -15,7 +15,7 @@ class Menu(ABC): #Интерфейс для всех будующих класс
     def save_to_xml(self, filename):
         pass
 
-class HotDish(Menu):# Реализация горячих блюд
+class HotDish(Menu):    # Реализация горячих блюд
     def __init__(self):
         self.name = input("Введите название горячего блюда: ")
         while True:
@@ -33,6 +33,25 @@ class HotDish(Menu):# Реализация горячих блюд
         print(f"\nГорячее блюдо: {self.name}")
         print(f"Цена: {self.price} руб.")
         print(f"Ингредиенты: {', '.join(self.ingredients)}")
+
+    def save_to_json(self):
+        return {
+            "type": "hot_dish",
+            "name": self.name,
+            "price": self.price,
+            "ingredients": self.ingredients
+        }
+
+    def save_to_xml(self):
+        root = ET.Element("dish")
+        name = ET.SubElement(root, "name")
+        name.text = self.name
+        price = ET.SubElement(root, "price")
+        price.text = str(self.price)
+        ingredients = ET.SubElement(root, "ingredients")
+        ingredients.text = ', '.join(self.ingredients)
+        return root
+
 
 class Drinks(Menu): #Реализация напитков
     def __init__(self):
@@ -52,3 +71,21 @@ class Drinks(Menu): #Реализация напитков
         print(f"\nНапиток: {self.name}")
         print(f"Цена: {self.price} руб.")
         print(f"Объем: {self.volume}")
+
+    def save_to_json(self):
+        return {
+            "type": "drink",
+            "name": self.name,
+            "price": self.price,
+            "volume": self.volume
+        }
+
+    def save_to_xml(self):
+        root = ET.Element("drink")
+        name = ET.SubElement(root, "name")
+        name.text = self.name
+        price = ET.SubElement(root, "price")
+        price.text = str(self.price)
+        volume = ET.SubElement(root, "volume")
+        volume.text = self.volume
+        return root

@@ -1,21 +1,18 @@
-{
-    "hot_dishes": [
-        {
-            "name": "Хинкали",
-            "price": 255.0,
-            "ingredients": [
-                "свнина",
-                " говядина",
-                " зелень",
-                " тесто"
-            ]
-        }
-    ],
-    "drinks": [
-        {
-            "name": "чай горный",
-            "price": 200.0,
-            "volume": "900"
-        }
-    ]
-}
+[
+    {
+        "type": "hot_dish",
+        "name": "wfcg",
+        "price": 120.0,
+        "ingredients": [
+            "guywce",
+            "jjygcwy",
+            "weg"
+        ]
+    },
+    {
+        "type": "drink",
+        "name": "kwuug",
+        "price": 120.0,
+        "volume": "10"
+    }
+]
