@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<menu>
+    <hot_dishes>
+        <dish>
+            <name>Хинкали</name>
+            <price>255.0</price>
+            <ingredients>['свнина', ' говядина', ' зелень', ' тесто']</ingredients>
+        </dish>
+    </hot_dishes>
+    <drinks>
+        <drink>
+            <name>чай горный</name>
+            <price>200.0</price>
+            <volume>900</volume>
+        </drink>
+    </drinks>
+</menu>
