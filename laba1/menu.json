@@ -1,18 +1,8 @@
 [
     {
-        "type": "hot_dish",
-        "name": "Хинкали",
-        "price": 255.0,
-        "ingredients": [
-            "мясо",
-            " тесто",
-            " зелень"
-        ]
-    },
-    {
-        "type": "drink",
-        "name": "тархун",
-        "price": 150.0,
-        "volume": "200"
+        "type": "dessert",
+        "name": "skyvg",
+        "price": 12.0,
+        "description": "efkvh"
     }
 ]

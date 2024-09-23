@@ -1,13 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<menu>
-    <dish>
-        <name>Хинкали</name>
-        <price>255.0</price>
-        <ingredients>мясо,  тесто,  зелень</ingredients>
-    </dish>
-    <drink>
-        <name>тархун</name>
-        <price>150.0</price>
-        <volume>200</volume>
-    </drink>
-</menu>
+<menu><dessert><name>skyvg</name><price>12.0</price><description>efkvh</description></dessert></menu>
