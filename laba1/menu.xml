@@ -1,2 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<menu><dessert><name>skyvg</name><price>12.0</price><description>efkvh</description></dessert></menu>
+<menu>
+  <hot_dishes />
+  <drinks />
+  <alcohols />
+  <desserts />
+  <salads>
+    <salad>
+      <title>owieih</title>
+      <price>10</price>
+      <main_ingredient>wehf</main_ingredient>
+    </salad>
+  </salads>
+  <bakeries />
+  <soups />
+  <breakfastMeals />
+</menu>

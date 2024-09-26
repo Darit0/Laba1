@@ -1,8 +1,27 @@
-[
-    {
-        "type": "dessert",
-        "name": "skyvg",
-        "price": 12.0,
-        "description": "efkvh"
-    }
-]
+{
+    "hot_dishes": [
+        {
+            "title": "woeug8gie",
+            "price": null,
+            "ingredients": "oseh,wouev"
+        },
+        {
+            "title": "wpieh",
+            "price": 890,
+            "ingredients": "wekh,weouh,wehf"
+        }
+    ],
+    "drinks": [
+        {
+            "title": "woirh",
+            "price": null,
+            "volume": "11"
+        }
+    ],
+    "alcohols": [],
+    "desserts": [],
+    "salads": [],
+    "bakeries": [],
+    "soups": [],
+    "breakfastMeals": []
+}
