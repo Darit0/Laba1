@@ -106,7 +106,7 @@ def main(): # Это основа - это база
             title = input("Введите название Алкоголя: ")
             price = get_good_number("Введите цену: ")
             percentage = get_good_number("Введите градусы: ")
-            alcohol = Drinks(title, price, percentage)
+            alcohol = Alcohol(title, price, percentage)
             DisplayJson.add_alcohol(dataFromJson, alcohol)
             DisplayXml.add_alcohol(dataFromXml, alcohol)
         elif choice == '4':

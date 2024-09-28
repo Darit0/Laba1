@@ -2,16 +2,37 @@
 <menu>
   <hot_dishes />
   <drinks />
-  <alcohols />
-  <desserts />
+  <alcohols>
+    <alcohol>
+
+    </alcohol>
+  </alcohols>
+  <desserts>
+    <dessert>
+
+    </dessert>
+  </desserts>
   <salads>
     <salad>
-      <title>owieih</title>
-      <price>10</price>
-      <main_ingredient>wehf</main_ingredient>
+
+    </salad>
+    <salad>
+
     </salad>
   </salads>
-  <bakeries />
-  <soups />
-  <breakfastMeals />
+  <bakeries>
+    <bakery>
+
+    </bakery>
+  </bakeries>
+  <soups>
+    <soup>
+
+    </soup>
+  </soups>
+  <breakfastMeals>
+    <breakfastMeal>
+
+    </breakfastMeal>
+  </breakfastMeals>
 </menu>
