@@ -1,26 +1,65 @@
 {
     "hot_dishes": [
-
+        {
+            "title": "Хинкали",
+            "price": 255,
+            "ingredients": "Мясо, тесто,зелень"
+        }
     ],
     "drinks": [
-
+        {
+            "title": "Лимонад",
+            "price": 155,
+            "volume": 200
+        }
     ],
     "alcohols": [
-
+        {
+            "title": "Вино",
+            "price": 340,
+            "percentage": 15
+        }
     ],
     "desserts": [
-
+        {
+            "title": "Чизкейк",
+            "price": 210,
+            "description": "нью-йоркский чизкейк"
+        }
     ],
     "salads": [
-
+        {
+            "title": "охотничий",
+            "price": 140,
+            "main_ingredient": "охотничие колбаски"
+        }
     ],
     "bakeries": [
-
+        {
+            "title": "лепешка",
+            "price": 100,
+            "type": "не сладкое"
+        }
     ],
     "soups": [
-
+        {
+            "title": "сырный суп",
+            "price": 210,
+            "main_ingredient": "сыр"
+        }
     ],
     "breakfastMeals": [
-
+        {
+            "title": "Английский завтрак",
+            "price": 300,
+            "main_course": "омлет",
+            "side_dish": "фасоль в томате"
+        },
+        {
+            "title": "Голандский завтрак",
+            "price": 340,
+            "main_course": "вафли",
+            "side_dish": "творог"
+        }
     ]
 }

@@ -1,38 +1,71 @@
 <?xml version='1.0' encoding='utf-8'?>
 <menu>
-  <hot_dishes />
-  <drinks />
+  <hot_dishes>
+    <hot_dish>
+      <title>Хинкали</title>
+      <price>255</price>
+      <ingredients>Мясо, тесто,зелень</ingredients>
+    </hot_dish>
+  </hot_dishes>
+  <drinks>
+    <drink>
+      <title>Лимонад</title>
+      <price>155</price>
+      <volume>200</volume>
+    </drink>
+    <drink>
+      <title>что-то новое</title>
+      <price>100</price>
+      <volume>100</volume>
+    </drink>
+  </drinks>
   <alcohols>
     <alcohol>
-
+      <title>Вино</title>
+      <price>340</price>
+      <percentage>15</percentage>
     </alcohol>
   </alcohols>
   <desserts>
     <dessert>
-
+      <title>Чизкейк</title>
+      <price>210</price>
+      <description>нью-йоркский чизкейк</description>
     </dessert>
   </desserts>
   <salads>
     <salad>
-
-    </salad>
-    <salad>
-
+      <title>охотничий</title>
+      <price>140</price>
+      <main_ingredient>охотничие колбаски</main_ingredient>
     </salad>
   </salads>
   <bakeries>
     <bakery>
-
+      <title>лепешка</title>
+      <price>100</price>
+      <type>не сладкое</type>
     </bakery>
   </bakeries>
   <soups>
     <soup>
-
+      <title>сырный суп</title>
+      <price>210</price>
+      <main_ingredient>сыр</main_ingredient>
     </soup>
   </soups>
   <breakfastMeals>
     <breakfastMeal>
-
+      <title>Английский завтрак</title>
+      <price>300</price>
+      <main_course>омлет</main_course>
+      <side_dish>фасоль в томате</side_dish>
+    </breakfastMeal>
+    <breakfastMeal>
+      <title>Голандский завтрак</title>
+      <price>340</price>
+      <main_course>вафли</main_course>
+      <side_dish>творог</side_dish>
     </breakfastMeal>
   </breakfastMeals>
 </menu>

@@ -155,6 +155,8 @@ def main(): # Это основа - это база
             print_data(dataFromJson, 'json')
         elif choice == '12':
             print_data(dataFromXml, 'xml')
+        elif choice == '13':
+            break
 
 if __name__ == "__main__":
     main()
